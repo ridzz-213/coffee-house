@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>food beverages</title>
+    <link type="text/css" rel="stylesheet" href="beverages.css">
+</head>
+    <body>
+
+        
+        <div class="card1">
+          <img src="beer2.jpg" alt="combo" style="width:100%">
+          <h1>Wild-Berry Vodka</h1>
+          <p class="price">$550</p>
+          <p><i>Berry-flavored super premium vodka imported from Poland. Belvedere is handcrafted the way Polish vodka has been made for over 600 years using 
+            100% Polish Dankowskie Gold Rye and pure artesian water from Belvedere's own wells. </i></p>
+          <p><button >Add to Cart</button></p>
+        </div>
+
+       <div class="card2">
+          <img src="beer1.jpg" alt="combo" style="width:100%">
+          <h1>Tuborg</h1>
+          <p class="price">$490</p>
+          <p><i>The beer is medium rich and lively with a moderate bitterness in the aftertaste.
+            It's brewed on lager malt, a slightly roasted, bright type of malt which results in the well-known mild, fresh taste and aroma of flowers and grain.</i></p>
+          <p><button onclick="AddtoCart()">Add to Cart</button></p>
+        </div>
+
+        <div class="card3">
+          <img src="beer.jpg" alt="combo" style="width:100%">
+          <h1>Bourbon Whisky</h1>
+          <p class="price">$770</p>
+          <p><i>Bourbon is so intrinsically linked to the ‘Bluegrass State’ that it’s easy to think the spirit is exclusively made there. 
+            It nevertheless has a diverse flavour profile, typically characterised by vanilla, oak, caramel and spice. The best way to find out, though, is to try for yourself!
+          </i> </p>
+          <p><button onclick="AddtoCart()">Add to Cart</button></p>
+        </div>
+        <script>
+          function AddtoCart() {
+              var len = $("#Items tr").length, $row, $inp1, $inp2, $cells;
+
+              $row = $("#Items td:first").clone(true);
+              $cells = $row.find("td");
+
+              $cells.get(0).html( len );
+
+              $inp1 = $cells.get(1).find("input:first");
+              $inp1.attr("id", $inp1.attr("id") + len).val("");
+
+              $inp2 = $cells.get(2).find("input:first");
+              $inp2.attr("id", $inp2.attr("id") + len).val("");
+
+              $("#Items").append($row);
+              }
+        </script>
+        
+        </body>
+        </html>
+        

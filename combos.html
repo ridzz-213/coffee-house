@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>unbeatable combos</title>
+    <link type="text/css" rel="stylesheet" href="combos.css">
+    <body>
+
+        
+        <div class="card1">
+          <img src="combo3.jpg" alt="combo" style="width:100%">
+          <h1>Combo1</h1>
+          <p class="price">$200</p>
+          <p>This combo you can select any coffee of your choice and in add-on you would get a austrailian dougnut with schezwan sauce. </p>
+          <p><button onclick="window.location.href='online.html';">Add to Cart</button></p>
+        </div>
+
+       <div class="card2">
+          <img src="combo1.jpg" alt="combo" style="width:100%">
+          <h1>Combo2</h1>
+          <p class="price">$470</p>
+          <p>This combo you can select any coffee of your choice and in add-on you would get a double chocalate pastry. </p>
+          <p><button onclick="AddtoCart()">Add to Cart</button></p>
+        </div>
+
+        <div class="card3">
+          <img src="combos.jpg" alt="combo" style="width:100%">
+          <h1>Combo3</h1>
+          <p class="price">$350</p>
+          <p>This combo you can select any coffee of your choice and in add-on you would get a chocalate truffle dougnut. </p>
+          <p><button onclick="AddtoCart()">Add to Cart</button></p>
+        </div>
+        <script>
+          function AddtoCart() {
+              var len = $("#Items tr").length, $row, $inp1, $inp2, $cells;
+
+              $row = $("#Items td:first").clone(true);
+              $cells = $row.find("td");
+
+              $cells.get(0).html( len );
+
+              $inp1 = $cells.get(1).find("input:first");
+              $inp1.attr("id", $inp1.attr("id") + len).val("");
+
+              $inp2 = $cells.get(2).find("input:first");
+              $inp2.attr("id", $inp2.attr("id") + len).val("");
+
+              $("#Items").append($row);
+              }
+        </script>
+        
+        </body>
+        </html>
+        

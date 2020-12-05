@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coffee House</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ",initial=scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="box-area">
+        <header>
+            <div class="wrapper" >
+                <div class="logo">
+                   <a href="#"><i class="fa fa-coffee" aria-hidden="true"></i>CH</a>
+                </div>
+                <nav id="ridhi">
+                <a href="#home"><i class="fa fa-home"></i>Home</a>
+                <a href="#about"><i class="fa fa-address-book-o" ></i>About Us</a>
+                <a href="#product"><i class="fa fa-product-hunt" aria-hidden="true"></i>Products</a>
+                <a href="#bs"><i class="fa fa-snowflake-o" aria-hidden="true"></i>Services</a>
+                <a href="#blog"><i class="fa fa-picture-o" aria-hidden="true"></i>Blog</a>
+                <a href="#contact"><i class="fa fa-volume-control-phone" aria-hidden="true"></i>Contact</a>
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i><button class="open-button" onclick="openForm()">Log In</button>
+                
+                </nav>
+            </div>
+             
+        </header>
+        <div class="sign-up-form"  id="myForm">
+            <h2>LOGIN NOW</h2>
+            <h3>To Create your Profile</h3>
+            <form method="POST" action="index.php">
+                <input type="email" Class="input-box" placeholder="Your email" name="email">
+                <input type="password" Class="input-box" id="myInput" placeholder="Your password" name="password"><br>
+                <input type="checkbox" onclick="myFunction()">Show Password
+                <script>
+                function myFunction() {
+                    var x = document.getElementById("myInput");
+                    if (x.type === "password") {
+                      x.type = "text";
+                    } else {
+                      x.type = "password";
+                    }
+                  }
+                </script>
+                <p><h3></h3><span><input type="checkbox"></span>I agree to the terms of services</p></h3>
+                
+                <hr>
+                <p class="or">OR</p>
+                <input type="submit" Class="btn btn-primary" value="login" name="">
+                <p><h3>Do You have an Account?<a href="#">Sign Up</a></p><h3></h3>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        <script>
+            function openForm() {
+              document.getElementById("myForm").style.display = "block";
+            }
+            
+            function closeForm() {
+              document.getElementById("myForm").style.display = "none";
+            }
+        </script>
+            
+        <div class="banner-area" id="home">
+            <h1>
+                Welcome!!<br><br>
+                To the <b>C</b>offee <b>H</b>ouse.
+            </h1>
+            <p>
+               Authentic Indian <b>Coffee</b>.<br>So find your <b>mate</b>,<br>And book the <b>date!</b>
+            </p>
+        </div>
+        <div class="about-area" id="about">
+            <div class="text-part">
+                <h1>About Us</h1>
+                    <p><i><b>Coffee House</b>, a part of Coffee Day Global Limited, is India’s favourite hangout for coffee and conversations. Popularly known as CH, we strive to provide the best experience to our guests.
+                         Our coffees are sourced from thousands of small coffee planters, who made us who we are today and we're glad to be a part of their lives.<b> We opened our first cafe in 2020 at Carter Road in Mumbai</b>
+                          – the youth and the young at heart immediately took to the cafe, and it continues to be one of the most happening places in the city. CH to the youth is a “hangout” spot where they meet people, 
+                          make conversations, and have a whole lot of fun over steaming cups of great coffee.It's been an exciting journey since then to becoming the largest organised retail cafe chain in the country.
+                           We’re also present in Banglaore, Pune and Hyderabad, so if your travel takes you there, do stop by our outlets to get a taste from back home!</i></p>
+                           
+            </div>
+        </div>
+    <div class="row">
+        
+        <div class="product-area" id="product">
+            <div class="text-part">
+            <h1 class="text-center">Our Products</h1>
+   
+    <!--product-1-->
+	    <div class="col-lg-4">
+	    <div class="our-team-main">
+	
+	    <div class="team-front">
+	    <img src="download.png" class="img-fluid" />
+	    <h3>MOCHA</h3>
+	
+	    </div>
+	
+	    <div class="team-back">
+	    <span>Mocha is another espresso based drink and another name for “mocaccino,”.
+            A cafe mocha is essentially a chocolate flavored variant of a cafe latte, or even a hot chocolate with shots of espresso in it. 
+            It is made up of espresso, milk, and chocolate. It can include one or two shots of espresso depending on taste preferences and traditionally is topped with milk foam, just like a latte.
+
+       
+	    </div>
+	
+	    </div>
+	    </div>
+	<!--product1-->
+	
+	<!--team-2-->
+	    <div class="col-lg-4">
+	    <div class="our-team-main">
+	
+	    <div class="team-front">
+	    <img src="images.png" class="img-fluid" />
+	    <h3>LATTE</h3>
+	
+	    </div>
+	
+	    <div class="team-back">
+	    <span>
+        Caffe latte is a coffee drink made with espresso and steamed milk. 
+        It consists of one-third espresso, two-thirds heated milk and about 1cm of foam. Depending on the skill of the barista,
+        the foam can be poured in such a way to create a picture. . A caffè latte may also be served consisting of strong or bold coffee.
+        
+	    </span>
+	    </div>
+	
+	    </div>
+	    </div>
+	<!--team-2-->
+	
+	<!--team-3-->
+	    <div class="col-lg-4">
+	    <div class="our-team-main">
+	
+	    <div class="team-front">
+	    <img src="p2.png" class="img-fluid" />
+	    <h3>BLACK COFFEE</h3>
+	
+	    </div>
+	
+	    <div class="team-back">
+	    <span>
+        Many people, even those who drink black coffee regularly, are unaware that the beverage is a great catalyst for losing weight.
+         If you want to lose weight because of aesthetic or health reasons, or you just don’t feel good in your own body, it is no secret that diet is an important part of any weight loss journey.
+	    </span>
+	    </div>
+	
+	    </div>
+        </div>
+    </div>
+    </div> 
+    </div>
+    
+    
+    
+        
+
+        <div class="bs-area" id="bs">
+            <div class="text-part">
+                <h1>SERVICES</h1>
+                <ul>
+                    <i class="fa fa-cutlery" aria-hidden="true"></i><li><a href="combos.html">Unbeatable Combos</a></li><br><br>
+                    <i class="fa fa-beer" aria-hidden="true"></i><li><a href="beverages.html">Food Beverages</a></li><br><br>
+                </ul>
+                <ul>
+                    <i class="fa fa-home" aria-hidden="true"></i><li><a href="offers.html">Exciting Offers</a></li><br><br>
+                    <i class="fa fa-apple" aria-hidden="true"></i><li><a href="#">Mobile App</a></li><br><br>
+                </ul>
+                <ul>
+                    <i class="fa fa-internet-explorer" aria-hidden="true"></i><li><a href="online.html">Order Online</a></li><br><br>
+                    <i class="fa fa-info" aria-hidden="true"></i><li><a href="maps.html">Cafe Locator</a></li><br><br>
+                </ul>
+
+                    
+            </div>
+        </div>
+        <div class="blog-area" id="blog">
+            <div class="text-part">
+                    <h1>Blog </h1>
+                    <div class="ridhi">
+                        <ol>
+                            <li><h2> Sprudge</h2>
+                        Sprudge is a site devoted to coffee news and culture, and you’ll get everything from updates on new coffee shop openings to coverage of coffee culture in far-off places, like Iran.
+                         They also run a site called Sprudge Wire, where they round up coffee news from around the web all in one place — a great resource if you want to know what’s happening in the world of coffee, and who is writing about it. (In full disclosure,
+                          I am a Sprudge contributor, so I am of course 100 percent biased in making this a daily morning visit to read what’s new.</li>
+                        
+                        <li><h2>Daily Coffee News</h2>
+                        Daily Coffee News is a website run by Roast Magazine. It’s more geared toward coffee professionals than the average coffee drinker, 
+                        but it’s full of news related to the coffee world — with a big focus on sustainability.</li>
+                        
+                        <li><h2>Jimseven</h2>
+                        Jimseven is the blog of James Hoffman, a well-respected figure in the specialty coffee industry. He’s not only a former barista champion, 
+                        but also the co-founder of Square Mile Coffee Roasters in London, as well as the author of The World Atlas of Coffee. Hoffman has been penning the blog for over 10 years; it’s a much-visited resource within the coffee community.</li>
+
+                        </ol>
+                    </div>
+                    
+                    
+                    
+            </div>
+        </div>
+        <div class="contact-area" id="contact">
+            <div class="text-part">
+                    <h1><b>Contact Us<b></h1>
+                    <h2>For more queries or enquiries contact<h2>
+                    <ul>
+                        <i class="fa fa-envelope" aria-hidden="true"></i></i><li><a href="mailto:ridhi01bauskar@gmail.com">ridhi01bauskar@gmail.com</a></li><br><br>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i></i><li><a href="#">Address</a></li>
+                       </ul>
+                    New Horizon near cinemax,second-floor<br>Evershine City,Mumbai-401208<br><br>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-pinterest"></a>
+            </div>
+            <div class="row">
+            <div class="col-sm-4">
+            <h1><b>Drop us a line!</h1><b>
+            <hr>
+            <address>
+            <strong>Email:</strong> <a href="mailto:#"> name@domain.com</a><br><br>
+            <strong>Phone:</strong> (555)123-4567
+            </address>
+            </div>
+                
+            <div class="col-sm-8 contact-form">
+            <form id="contact" method="post" class="form" role="form">
+            <div class="row">
+            <div class="col-xs-6 col-md-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required autofocus />
+            </div>
+            <div class="col-xs-6 col-md-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
+            </div>
+            </div>
+            <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+            <br />
+            <div class="row">
+            <div class="col-xs-12 col-md-12 form-group">
+            <button class="btn btn-primary pull-right" type="submit">Submit</button>
+            </form>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div> 
+    <div class="footer">
+        <div class="inner-footer">
+            <div class="footer-items">
+                <h2>Cafe Menu</h2>
+                <div class="border"></div>
+                <ul>
+                    <li>What's New</li>
+                    <li>Food</li>
+                    <li>Beverages</li>
+                    <li>Home delivery</li>
+                    <li>Nutritional information</li>
+                </ul>
+            </div>
+            <div class="footer-items">
+                <h2>Shop</h2>
+                <div class="border"></div>
+                <ul>
+                    <li>Coffee Mugs & Cups</li>
+                    <li>Coffee Makers & Wakecup</li>
+                    <li>Coffee Powders</li>
+                    <li>Gifts</li>
+                </ul>
+            </div>
+            <div class="footer-items">
+                <h2>Business</h2>
+                <div class="border"></div>
+                <ul>
+                     <li>Lease Enquiry</li>
+                    <li>Advertise With Us</li>
+                    <li>Coffee Vending machine</li>
+                    <li>Outdoor Catering Service</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div class="footer-items">
+                <h2>About Us</h2>
+                <div class="border"></div>
+                <ul>
+                    <li>Our Story</li>
+                    <li>News & Events</li>
+                    <li>Foundation</li>
+                    <li>Careers</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">Copyright &copy; My Company 2020. All rights reserved.</div>
+    </div>
+</body>
+</html>
+
+                   
+                    
+                
+                
+        
+    
+       

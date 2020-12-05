@@ -1,0 +1,36 @@
+body{
+    background-color:chocolate;
+}
+.card1, .card2, .card3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 40px;
+  text-align: center;
+  font-family: arial;
+  float: left;
+  width: 40%;
+  padding: 50px;
+  background-color: white;
+  
+}
+
+.price {
+  color:red;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color:turquoise;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}

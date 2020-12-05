@@ -1,0 +1,502 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    background: #d2691e;;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 50px; /*half of width,height;*/
+    -webkit-browser-radius:50px;
+    -moz-border-radius:50px;
+    float: left;
+    color:black;
+}
+.logo a{
+    color: black;
+    text-decoration: none;
+    
+}
+.logo ul li{
+    text-decoration: none;
+}
+header{
+    height: 100px;
+    background:black;
+    width: 100%;
+    z-index:  12;
+    position: fixed;
+}
+nav{
+    float: right;
+    line-height: 100px;
+}
+ nav a{
+    margin: 0 15px;
+    color:#d2691e;
+    text-decoration: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+nav i{
+    color: #f2f2f2;
+}
+
+a:hover{
+    color:wheat;
+}
+.sign-up-form{
+    display: none;
+    z-index: 9;
+    border: 5px solid black;
+    background: #ffffff;
+    padding: 5px;
+    margin: 7.5% auto;
+    position: fixed;
+    right: 15px;
+    border-radius: 70px;
+
+}
+.open-button {
+    background-color:#d2691e ;
+    color:black;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    border: nine;
+    padding: 0;
+    position: absolute;
+    top: 25px;
+    float: right;
+    font-size: 20px;
+  }
+
+.sign-up-form h6{
+    float: right;
+}
+.sign-up-form a:hover{
+    color: black;
+}
+.sign-up-form h2{
+    color: #1c8adb;
+    margin-bottom: 30px;
+}
+.sign-up-form .input-box{
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px 0;
+    width: 50%;
+    border: 1px solid #999;
+    outline: none;
+    position: relative;
+}
+.sign-up-form .signupb{
+    background-color:#1c8adb;
+}
+.sign-up-form .signupw{
+    background-color:#1c8adb;
+}
+.sign-up-form .google{
+    background-color: #dd4b39;
+  color: white;
+
+}
+.sign-up-form .fbbtn{
+    
+        background-color: #3B5998;
+        color: white;
+}
+
+.banner-area{
+    position: relative;;
+    background-image: url(COFFEE.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+}
+/*text-area*/
+.banner-area h1{
+    text-align: left;
+    color:white;
+    padding:200px 30px 70px 150px;
+}
+.banner-area b{
+    color: #d2691e;
+}
+.banner-area p{
+    color: #f2f2f2;
+    text-align: justify;
+    font-size: 40px;
+    padding-left: 200px;
+    padding-top: 200px;
+}
+
+.about-area, .product-area, .contact-area, .blog-area, .bs-area{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 700px;
+}
+.text-part{
+    width: 65%;
+    height: 80%;
+    color:black;
+}
+h1{
+    font-size: 50px;
+    font-family: Audiowide;
+}
+p{
+    font-size: 24px;
+    line-height: Audiowide;
+}
+.about-area h1{
+    color: #d2691e;
+}.about-area b{
+    color: #d2691e;
+}
+.about-area p,i{
+    color: #f2f2f2;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/*parallax*/
+.about-area{
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+}
+.product-area{
+    position: relative;
+    background-image: url(COFFEE.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    margin: 10px;
+}
+/*text-area*/
+h1
+{
+	color:#fff;
+	margin:40px 0 60px 0;
+	font-weight:300;
+}
+.row::after {
+        content: "";
+        clear: both;
+        display: table;
+ }
+
+
+.our-team-main
+{
+	width:33.33%;
+	height:50%;
+	border-bottom:5px black solid;
+	background:#fff;
+	text-align:center;
+	border-radius:20px;
+	overflow:hidden;
+	position:relative;
+	transition:0.5s;
+    margin-bottom:28px;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+
+
+.our-team-main img
+{
+    border-radius:50%;
+	margin-bottom:20px;
+	width: 100px;
+}
+
+.our-team-main h3
+{
+	font-size:40px;
+    font-weight:700;
+    
+}
+
+.our-team-main p
+{
+	margin-bottom:0;
+}
+
+.team-back
+{
+	width:100%;
+	height:auto;
+	position: relative;
+	top:0PX;
+	padding:5px 5px 5PX 5px;
+    background:#fff;
+    text-align: center;	
+   
+    
+}
+
+
+.team-front
+{
+	width:100%;
+	height:50%;
+	position: relative;
+	z-index:10;
+	background:#fff;
+	padding:15px;
+	bottom:10px;
+    transition: all 0.5s ease;
+    
+}
+
+.our-team-main:hover .team-front
+{
+	bottom:-200px;
+	transition: all 0.5s ease;
+}
+
+.our-team-main:hover
+{
+	border-color:#777;
+	transition:0.5s;
+}
+
+.bs-area{
+    position: relative;
+    background-image: url(COFFEE-A.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    
+}
+.bs-area h1{
+    color: black;
+
+}
+.bs-area ul{
+    float: left;
+    font-size: 40px;
+    list-style: none;
+}
+.bs-area i{
+    size: 50px;
+    color: black;
+
+}
+.bs-area ul a{
+    text-decoration: none;
+    color: #d2691e;
+}
+.bs-area ul a:hover{
+    text-decoration: none;
+    background-color:black;
+    color: white;
+
+}
+.blog-area{
+    position: relative;
+    background-image: url(COFFEE.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    margin: 20px;
+}
+.blog-area h2{
+    color: #d2691e;
+}
+.blog-area ol{
+    color: white;
+    background-color: black;
+    list-style: none;
+    width: 100%;
+    height: 300%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px 20px;
+    padding-right: 20px;
+}
+.contact-area{
+    position: relative;
+    background-image: url(COFFEE-A.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    text-align: center;
+}
+.contact-area h1 b{
+    color: black;
+}
+.contact-area h2 {
+    color: #d2691e;
+}
+.contact-area ul i{
+    color: blue;
+    font-size: larger;    
+}
+.contact-area p{
+    color: #d2691e;
+}
+.contact-area UL LI A:hover{
+    color: black;
+}
+.contact-area UL I{
+    color: red;
+}
+.contact-area .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    height: 20px;
+  }
+  
+.contact-area .fa:hover {
+      opacity: 0.7;
+  }
+  
+.contact-area .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+.contact-area .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+.contact-area .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+.contact-area .fa-instagram {
+    background: #eb5a1b;
+    color: white;
+  }
+  
+.contact-area .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+  
+.contact-form {
+    margin-top:70px;
+    width: 50%;
+    height: 50%;
+}
+.contact-form input{
+    width: 250px;
+    height: 25px;
+}
+.contact-form textarea{
+    width:250px ;
+    height: 200px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.footer{
+    width:100%;
+    background: #00121b;
+    display: block;
+}
+.inner-footer{
+    width: 95%;
+    margin: auto;
+    padding: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    position: relative;
+}
+.footer-items{
+    width: 25%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.footer-items p{
+    color: grey;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25px;
+}
+.footer-items h2{
+    margin: 10px 0;
+    color: grey;
+    font-size: 16px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.border{
+    height: 2px;
+    width: 40px;
+    background: #ff9800;
+}
+.footer-items ul{
+    list-style: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+.footer-items ul li{
+    margin: 10px 0;
+    height: 25px;
+}
+.footer-items li i{
+    margin-right: 20px;
+}
+.footer-bottom{
+    padding: 10px;
+    background: #3d545f;
+    font-size: 12px;
+    color: #fff;
+}
+@media screen and(max-width:1085px){
+    .footer-items{
+        width:50%;
+
+    }
+}
+@media screen and(max-width:768px){
+    #ridhi{
+        width:15%;
+
+    }
+}
+
